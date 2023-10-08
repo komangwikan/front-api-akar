@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #77dd77;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.container {
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  width: 450px;
+  max-width: 90%; /* Adjust the maximum width for responsiveness */
+  display: flex;
+  flex-direction: column;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; /* Ensure that input and button wrap on smaller screens */
+}
+
+h1 {
+  color: #107910;
+}
+
+#calculate-input {
+  width: 100%; /* Make the input take up the full width on small screens */
+  padding: 8px 20px;
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+h3 {
+  font-weight: 400;
+}
+
+#calculate-button {
+  padding: 8px 15px;
+  background-color: #77dd77;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+
+#calculate-button:hover {
+  padding: 8px 15px;
+  background-color: #fff;
+  color: #77dd77;
+  border: none;
+  font-size: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  border-radius: 5px;
+  margin-left: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 75%;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  #calculate-input {
+    width: 100%;
+  }
+
+  #calculate-button {
+    margin-left: 0; /* Center the button on smaller screens */
+  }
+  h1 {
+    text-align: center;
+  }
+}
